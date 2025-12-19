@@ -12,6 +12,9 @@ importers:
         specifier: ^3.5.24
         version: 3.5.26(typescript@5.9.3)
     devDependencies:
+      '@commitlint/config-conventional':
+        specifier: ^20.2.0
+        version: 20.2.0
       '@eslint/js':
         specifier: ^9.39.2
         version: 9.39.2
@@ -88,6 +91,10 @@ packages:
     resolution: {integrity: sha512-l37HkrPZ2DZy26rKiTUvdq/LZtlMcxz+PeLv9dzK9NzoFGuJdOQyYU7IEkEQj0pO++uYue89wzOpZ0hcTtoqUA==}
     engines: {node: '>=v18'}
     hasBin: true
+
+  '@commitlint/config-conventional@20.2.0':
+    resolution: {integrity: sha512-MsRac+yNIbTB4Q/psstKK4/ciVzACHicSwz+04Sxve+4DW+PiJeTjU0JnS4m/oOnulrXYN+yBPlKaBSGemRfgQ==}
+    engines: {node: '>=v18'}
 
   '@commitlint/config-validator@20.2.0':
     resolution: {integrity: sha512-SQCBGsL9MFk8utWNSthdxd9iOD1pIVZSHxGBwYIGfd67RTjxqzFOSAYeQVXOu3IxRC3YrTOH37ThnTLjUlyF2w==}
@@ -737,6 +744,10 @@ packages:
 
   conventional-changelog-angular@7.0.0:
     resolution: {integrity: sha512-ROjNchA9LgfNMTTFSIWPzebCwOGFdgkEq45EnvvrmSLvCtAw0HSmrCs7/ty+wAeYUZyNay0YMUNYFTRL72PkBQ==}
+    engines: {node: '>=16'}
+
+  conventional-changelog-conventionalcommits@7.0.2:
+    resolution: {integrity: sha512-NKXYmMR/Hr1DevQegFB4MwfM5Vv0m4UIxKZTTYuD98lpTknaZlSRrDOG4X7wIXpGkfsYxZTghUN+Qq+T0YQI7w==}
     engines: {node: '>=16'}
 
   conventional-commits-parser@5.0.0:
@@ -1531,6 +1542,11 @@ snapshots:
       - '@types/node'
       - typescript
 
+  '@commitlint/config-conventional@20.2.0':
+    dependencies:
+      '@commitlint/types': 20.2.0
+      conventional-changelog-conventionalcommits: 7.0.2
+
   '@commitlint/config-validator@20.2.0':
     dependencies:
       '@commitlint/types': 20.2.0
@@ -2132,6 +2148,10 @@ snapshots:
   concat-map@0.0.1: {}
 
   conventional-changelog-angular@7.0.0:
+    dependencies:
+      compare-func: 2.0.0
+
+  conventional-changelog-conventionalcommits@7.0.2:
     dependencies:
       compare-func: 2.0.0
 
